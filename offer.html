@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Offer — M🔜 Mission Soon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#faf8f3; --gold:#a9752f; --gold-bright:#8a5c1f; --text:#1a1713; --text-dim:#6b6358; --line:#e5ddd0;
+    color-scheme: light;
+    box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0c0b09; --gold:#c9a24b; --gold-bright:#e6c674; --text:#f3efe6; --text-dim:#948d7d; --line:#2b2620; color-scheme: dark; }
+  }
+  *{box-sizing:inherit} html,body{height:100%}
+  body{margin:0;color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;
+    background:linear-gradient(var(--line) 1px,transparent 1px) 0 0/44px 44px,
+      linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/44px 44px, var(--bg);
+    background-blend-mode:overlay;}
+  .wrap{max-width:720px;margin:0 auto;padding:0 28px 90px}
+  nav{position:sticky;top:env(safe-area-inset-top,0px);background:color-mix(in srgb, var(--bg) 85%, transparent);backdrop-filter:blur(6px);
+    display:flex;justify-content:flex-end;gap:18px;padding:14px 28px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  nav a{color:var(--text-dim);text-decoration:none;font-size:14px}
+  nav a:hover{color:var(--gold-bright)}
+  .mark{font-family:'Fraunces',serif;font-weight:600;font-size:17px;color:var(--gold-bright);margin-right:auto}
+  h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(32px,7vw,50px);margin:70px 0 14px;color:var(--text)}
+  h1 em{font-style:italic;font-weight:600;color:var(--gold-bright)}
+  .sub{color:var(--text-dim);max-width:56ch;margin:0 0 50px}
+
+  .pkg{border:1px solid var(--line);border-radius:8px;padding:28px;margin-bottom:28px}
+  .pkg .tag{color:var(--gold-bright);font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+  .pkg h2{font-family:'Fraunces',serif;font-weight:600;font-size:24px;margin:0 0 6px;color:var(--text)}
+  .pkg .price{color:var(--gold-bright);font-size:17px;margin:0 0 18px}
+  .pkg .price small{color:var(--text-dim);font-size:13px;font-weight:400}
+  .pkg ul{margin:0 0 18px;padding-left:18px;color:var(--text-dim)}
+  .pkg li{margin-bottom:6px}
+  .proof{font-size:13px;color:var(--text-dim)}
+  .proof a{color:var(--gold-bright);text-decoration:none}
+
+  h2.section{font-family:'Fraunces',serif;font-weight:600;font-size:15px;color:var(--text-dim);
+    text-transform:uppercase;border-top:1px solid var(--line);padding-top:36px;margin:40px 0 18px}
+  ol{color:var(--text-dim);padding-left:20px}
+  li.step{margin-bottom:8px}
+
+  .cta{display:inline-block;margin-top:10px;background:var(--gold);color:var(--bg);
+    padding:12px 22px;border-radius:5px;text-decoration:none;font-weight:600;font-size:14px}
+  .cta:hover{background:var(--gold-bright)}
+</style>
+</head>
+<body>
+<nav>
+  <span class="mark">M🔜 MISSION SOON</span>
+  <a href="index.html">Jobs</a>
+  <a href="about.html">About</a>
+  <a href="offer.html">Offer</a>
+  <a href="contact.html">Contact</a>
+  <a href="privacy.html">Privacy</a>
+</nav>
+<div class="wrap">
+  <h1>Hire the <em>crew.</em></h1>
+  <p class="sub">Two jobs Mission Soon runs for local businesses. Pick one, and the clock starts.</p>
+
+  <div class="pkg">
+    <div class="tag">Job 01</div>
+    <h2>Business Website</h2>
+    <p class="price">R2,000 – R8,000 once-off <small>+ R200–R500/month maintenance</small></p>
+    <ul>
+      <li>Mobile-first site built for your business — salon, restaurant, spaza, church, or clothing brand</li>
+      <li>WhatsApp ordering button built in</li>
+      <li>Yoco or PayFast payment integration</li>
+      <li>Hosted and live within days, not weeks</li>
+    </ul>
+    <p class="proof">Proof of work: <a href="index.html#jobs">Sim Wear</a> — live, built and run by this crew.</p>
+  </div>
+
+  <div class="pkg">
+    <div class="tag">Job 02</div>
+    <h2>WhatsApp / AI Auto-Reply Bot</h2>
+    <p class="price">Setup fee <small>+ monthly retainer</small></p>
+    <ul>
+      <li>Auto-replies to customer enquiries on WhatsApp, day or night</li>
+      <li>Answers FAQs, takes orders, routes urgent messages to you</li>
+      <li>Built on the same stack already powering Sibiya AI</li>
+    </ul>
+    <p class="proof">Proof of work: <a href="index.html#jobs">Sibiya AI</a> — live, speaks isiZulu, already shipped.</p>
+  </div>
+
+  <h2 class="section">How a job runs</h2>
+  <ol>
+    <li class="step">You send the brief — what the business needs, on WhatsApp or Instagram.</li>
+    <li class="step">Mission Soon quotes the job and the clock starts: 48 hours to first ship.</li>
+    <li class="step">You review, we polish, it goes live.</li>
+    <li class="step">Monthly retainer covers updates and support after launch.</li>
+  </ol>
+
+  <a class="cta" href="contact.html">Start a job →</a>
+</div>
+</body>
+</html>

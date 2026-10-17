@@ -9,16 +9,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0c0b09;
-    --bg-raised: #141210;
-    --gold: #c9a24b;
-    --gold-bright: #e6c674;
-    --text: #f3efe6;
-    --text-dim: #948d7d;
-    --line: #2b2620;
+    --bg: #faf8f3;
+    --bg-raised: #f0ebe0;
+    --gold: #a9752f;
+    --gold-bright: #8a5c1f;
+    --text: #1a1713;
+    --text-dim: #6b6358;
+    --line: #e5ddd0;
+    color-scheme: light;
     box-sizing: border-box;
     padding-top: env(safe-area-inset-top, 0px);
     padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0b09;
+      --bg-raised: #141210;
+      --gold: #c9a24b;
+      --gold-bright: #e6c674;
+      --text: #f3efe6;
+      --text-dim: #948d7d;
+      --line: #2b2620;
+      color-scheme: dark;
+    }
   }
   html { scroll-padding-top: env(safe-area-inset-top, 0px); }
   * { box-sizing: inherit; }
@@ -129,7 +142,7 @@
   nav {
     position: sticky;
     top: env(safe-area-inset-top, 0px);
-    background: rgba(12,11,9,0.9);
+    background: color-mix(in srgb, var(--bg) 85%, transparent);
     backdrop-filter: blur(6px);
     display: flex;
     justify-content: flex-end;
@@ -221,6 +234,7 @@
     <nav>
       <a href="#jobs">Jobs</a>
       <a href="about.html">About</a>
+      <a href="offer.html">Offer</a>
       <a href="contact.html">Contact</a>
       <a href="privacy.html">Privacy</a>
     </nav>
